@@ -67,7 +67,7 @@ app.get("/graph4", (req, res) => {
 // });
 
 module.exports = (req, res) => {
-  res.status(200).send("Hello from your Vercel Serverless Function!");
+  res.status(200).send("Hello from your Serverless Function!");
 };
 
 module.exports = app;
