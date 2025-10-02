@@ -33,7 +33,7 @@ app.post("/login", (req, res) => {
 app.post("/signup", (req, res) => {
   const { username, password } = req.body;
   console.log(`Signup attempt for username: ${username}`);
-  res.redirect("login.ejs");
+  res.redirect("/login");
 });
 
 app.get("/catalog", (req, res) => {
