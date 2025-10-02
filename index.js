@@ -66,8 +66,8 @@ app.get("/graph4", (req, res) => {
 //   console.log(`Server is running at http://localhost:${port}`);
 // });
 
-module.exports = (req, res) => {
-  res.status(200).send("Hello from your Serverless Function!");
-};
+//module.exports = (req, res) => {
+//  res.status(200).send("Hello from your Serverless Function!");
+//};
 
 module.exports = app;
