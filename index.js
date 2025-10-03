@@ -27,7 +27,7 @@ app.get("/signup", (req, res) => {
 
 app.post("/signup",async(req,res)=>{
     const data = {
-        fullName : req.body.fullname,
+        fullname : req.body.fullname,
         username:req.body.username,
         password: req.body.password,
         email:req.body.email,

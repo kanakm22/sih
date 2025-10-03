@@ -9,7 +9,7 @@ mongoose.connect("mongodb://localhost:27017/users") // users is db name
 })
 
 const LoginSchema = new mongoose.Schema({
-    fullName:{
+    fullname:{
         type:String,
         required:true
     },
