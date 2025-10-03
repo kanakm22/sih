@@ -40,7 +40,7 @@ app.post("/signup",async(req,res)=>{
             res.send('<script>alert("User already exists. Please choose a different name."); window.location.href = "/signup";</script>')
         }else{
             await collection.insertMany([data]);
-            res.render("home.hbs")
+            res.render("/login")
         }
     }catch(err){
         res.send('<script>alert("An error occurred during signup."); window.location.href = "/signup";</script>')
@@ -52,7 +52,7 @@ app.post("/login",async(req,res)=>{
     try{
         const check = await collection.findOne({username:req.body.username})
         if(check.password === req.body.password){
-            res.render("home");
+            res.render("index.ejs");
         }else{
             res.send('<script>alert("Wrong username or password."); window.location.href = "/login";</script>')
         }

@@ -5,6 +5,7 @@
     "express": "^5.1.0",
     "mongoose": "^8.19.0",
     "nodemon": "^3.1.10",
-    "serverless-http": "^4.0.0"
+    "serverless-http": "^4.0.0",
+    "vercel": "^48.2.0"
   }
 }
