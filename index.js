@@ -40,7 +40,7 @@ app.post("/signup",async(req,res)=>{
             res.send('<script>alert("User already exists. Please choose a different name."); window.location.href = "/signup";</script>')
         }else{
             await collection.insertMany([data]);
-            res.render("/login")
+            res.redirect("/login")
         }
     }catch(err){
         res.send('<script>alert("An error occurred during signup."); window.location.href = "/signup";</script>')
