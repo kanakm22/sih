@@ -22,7 +22,7 @@ app.get("/login", (req, res) => {
 });
 
 app.get("/signup", (req, res) => {
-  res.render("login.ejs");
+  res.render("signUp.ejs");
 });
 
 app.post("/signup",async(req,res)=>{
